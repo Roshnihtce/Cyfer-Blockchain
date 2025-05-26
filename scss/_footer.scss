@@ -1,0 +1,29 @@
+.fixed-bg1 {
+    background-image: url('../images/footer-vactor.png');
+    background-size: cover; // better than 100% 100% to preserve aspect ratio
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; // change to `fixed` if you want parallax effect
+    padding-block-end: 0;
+}
+
+
+.footer-link {
+    text-decoration: none !important;
+    color: #fff; // or your desired color
+
+    &:hover {
+        text-decoration: underline;
+        color: #b697f3;
+    }
+}
+
+// Add spacing between links
+ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin: 1rem 0;
+    }
+}

@@ -1,0 +1,135 @@
+// ------- Custom Variables ------- //
+
+// Colors
+$accent:          #F9995D;
+$primary:         #ffff;
+$black:           #11111B;
+$purple:          #B95DFE;
+$voilet:          #8649F2;
+
+$custom-colors: (
+  "accent": $accent,
+  "primary": $primary,
+  "black": $black,
+  "purple": $purple,
+  "voilet": $voilet,
+);
+
+// Grid breakpoints
+$custom-grid-breakpoints: (
+  xxxl: 1700px
+);
+
+// Container widths
+$custom-container-max-widths: (
+  xxxl: 1460px
+);
+
+// Font families
+$heading-font-family: 'Clash Display Variable', sans-serif;
+$font-family-base: 'Archivo', sans-serif;
+
+// Font colors
+$body-bg:$black;
+$body-color:#fff;
+
+
+$heading-gradient: linear-gradient(-63deg, #FFFF 0%, #DAC8FF 100%);
+h1, h2, h3, h4, h5, h6 {
+  background: $heading-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+// Font size base
+$font-size-base: 1rem;
+
+// Font sizes ( 68 60 40 32 30 28 24 20 16 14 )//
+$h1-font-size: $font-size-base * 4.25;
+$h2-font-size: $font-size-base * 3.75;
+$h3-font-size: $font-size-base * 2.5;
+$h4-font-size: $font-size-base * 2;
+$h5-font-size: $font-size-base * 1.875;
+$h6-font-size: $font-size-base * 1.75;
+$h7-font-size: $font-size-base * 1.5;
+$h8-font-size: $font-size-base * 1.25;
+$h9-font-size: $font-size-base;
+$h10-font-size: $font-size-base * 0.875;
+
+$custom-font-size: (
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size,
+  10: $h10-font-size,
+);
+
+// Spacers
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .5,
+  2: $spacer,
+  3: $spacer * 1.25,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4.5,
+  7: $spacer * 5,
+  
+
+);
+
+$position-values: (
+  0: 0,
+  5: 5%,
+  10: 10%,
+  15: 15%,
+  50: 50%,
+  70: 70px,
+  100: 100%,
+  200: 200px,
+);
+
+
+// Navigation
+$nav-link-color: #fff;
+
+
+
+@import './fonts';
+
+// ------- Bootstrap Import Order ------- //
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import '../node_modules/bootstrap/scss/mixins';
+
+//  Map overrides
+$container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
+$grid-breakpoints: map-merge($map1: $grid-breakpoints, $map2:$custom-grid-breakpoints );
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$font-sizes: map-merge($font-sizes, $custom-font-size);
+
+// Our Custom Partials
+
+@import './header.scss';
+@import './banner_section';
+@import './market_section.scss';
+@import './discover_cryptocurrency';
+@import './crypto_product';
+@import './form';
+@import './footer';
+
+
+
+
+
+// Bootstrap Main 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+
+// ------- Base Typography ------- //

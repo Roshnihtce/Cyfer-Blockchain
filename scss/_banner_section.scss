@@ -1,0 +1,39 @@
+ .fixed-bg {
+     background-image: url('../images/Vector_banner.png');
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-block-end: 0;
+
+     // Optional overlay (if background too bright)
+//      &::before {
+//          content: '';
+//          position: absolute;
+//          inset: 0;
+//          z-index: 1;
+//      }
+
+//      @media (min-width: 992px) {
+//          flex-direction: row;
+//          align-items: center;
+//          justify-content: space-between;
+//      }
+
+//      .content {
+//          max-width: 500px;
+
+//          figure {
+//              margin: 0;
+//              max-width: 500px;
+
+//              img {
+//                  width: 100%;
+//                  height: auto;
+//              }
+//          }
+//      }
+
+  }
