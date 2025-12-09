@@ -1,49 +1,41 @@
-.crypto-card {
-  display: flex;
-  align-items: center;
-  background: #1a1a1f;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0 12px 12px 0;
-  overflow: hidden;
-  height: 80px;
-  padding: 0;
-  box-shadow: 0 0 10px rgba(108, 47, 252, 0.2);
-  transition: transform 0.3s ease;
+/* Gradient Border Button  */
+.gradient-button {
+  display: inline-block;
+  padding: 0.5rem 1.5635rem;
+  font-size: 0.875rem;
+  color: #fff;
+  background: linear-gradient(#11111B, #11111B) padding-box,
+              linear-gradient(90deg, #B95DFE, #E6C6FF) border-box;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-  &:hover {
-    transform: scale(1.02);
-  }
+.gradient-button:hover {
+  background: linear-gradient(90deg, #B95DFE, #E6C6FF);
+  color: #0b0b13;
+}
 
-  .card-icon {
-    background: linear-gradient(180deg, #b46cff, #6a11cb);
-    width: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-    height: 100%;
+/* Product Section */
+.crypto-products {
+  position: relative;
+}
 
-    img {
-      width: 40px;
-      height: 40px;
-    }
-  }
+.product-card-sakura,
+.product-card-komorebi,
+.product-card-yugen {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 4.375rem;
+  height: 5rem;
+}
 
-  .card-content {
-    flex-grow: 1;
-    padding: 0 20px;
-    color: white;
-
-    h5 {
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
-
-    p {
-      color: #ccc;
-      font-size: 14px;
-      margin: 0;
-    }
-  }
+.product-info-sakura,
+.product-info-komorebi,
+.product-info-yugen {
+  position: absolute;
+  top: 20%;
+  left: 50%;
 }

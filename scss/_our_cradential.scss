@@ -1,0 +1,270 @@
+.our-credentials::after {
+    content: '';
+    position: absolute;
+    top: 75%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #B95DFE;
+    filter: blur(100px);
+    opacity: .2;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+.tabs-inside {
+    margin: 0;
+    z-index: 5;
+    border-bottom: none !important;
+}
+
+.tabs-inside .nav-link {
+    color: white;
+    border: none !important;
+    border-radius: 0;
+    padding: 0.75rem 1.5625rem;
+    font-size: 0.875rem !important;
+    font-weight: 500;
+
+}
+
+.tabs-inside .nav-link.active {
+    background-color: transparent !important;
+    color: #fff;
+    border: none !important;
+    z-index: 10;
+}
+
+#Blockchain-tab {
+    padding-left: 2.5rem;
+
+}
+
+#Blockchain-tab.active {
+    padding-left: 6.25rem;
+}
+
+#Digital-tab {
+    padding-left: 6.25rem;
+
+}
+
+#Digital-tab.active {
+    padding-left: 2.5rem;
+}
+
+
+
+.grid-1-1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.logo-frame {
+    position: relative;
+    overflow: hidden;
+}
+
+.frame-bg {
+    z-index: 1;
+}
+
+.logo-wrapper {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+    padding: 0px;
+    place-items: center;
+    margin-right: 6.25rem;
+    margin-top: 6.25rem;
+
+}
+
+.flip-y {
+    transform: scaleX(-1);
+}
+
+
+.start-5 {
+    left: -10% !important;
+}
+
+
+@media(max-width: 1400px) {
+
+    .tabs-inside .nav-link {
+        padding: 0.75 0px;
+        font-size: 1.125rem;
+    }
+
+    .start-5 {
+        width: 15% !important;
+    }
+
+}
+
+@media(max-width: 1200px) {
+    .logo-wrapper {
+        margin-right: 3.125rem;
+    }
+
+    #Blockchain-tab {
+        padding-left: 3.75rem;
+
+    }
+
+    .start-10 {
+        left: 15% !important;
+    }
+
+    #Blockchain-tab.active {
+        padding-left: 8.5rem;
+    }
+
+    .start-5 {
+        left: 0% !important;
+        width: 20% !important;
+        top: 80% !important;
+    }
+
+}
+
+
+@media(max-width: 992px) {
+
+    #Blockchain-tab {
+        padding-left: 2.5rem;
+
+    }
+
+    #Blockchain-tab.active {
+        padding-left: 3.375rem;
+    }
+
+    .tabs-inside .nav-link {
+        padding: 0.75rem 0px;
+        font-size: 1rem;
+    }
+
+    .start-10 {
+        left: 10% !important;
+    }
+
+}
+
+@media(max-width: 768px) {
+    #Blockchain-tab {
+        padding-left: 1rem;
+
+    }
+
+    #Blockchain-tab.active {
+        padding-left: 2.25rem;
+    }
+
+    #Digital-tab {
+        padding-left: 5.25rem;
+
+    }
+
+    #Digital-tab.active {
+        padding-left: 1.375rem;
+    }
+
+    .start-10 {
+        left: 13% !important;
+    }
+}
+
+@media(max-width: 575px) {
+    #Blockchain-tab {
+        padding-left: 3.125rem;
+
+    }
+
+    #Blockchain-tab.active {
+        padding-left: 3.4375rem;
+    }
+
+    .tabs-inside .nav-link {
+        padding: 0.75rem 0px;
+        font-size: 0.875rem;
+    }
+
+    .start-10 {
+        left: 8% !important;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 500px) {
+    #Blockchain-tab {
+        padding-left: 0;
+    }
+
+    #Blockchain-tab.active {
+        padding-left: 0px;
+    }
+
+    .tabs-inside .nav-link {
+        padding: 0.75rem 0px;
+        font-size: 0.75rem;
+    }
+
+    #Digital-tab {
+        padding-left: 2.375rem;
+    }
+
+    #Digital-tab.active {
+        padding-left: 0px;
+    }
+
+    .logo-wrapper {
+        z-index: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.875rem;
+        padding: 2.5rem;
+        margin-top: 1.625rem;
+
+
+    }
+
+}
+
+
+.z-n1 {
+
+    z-index: -2 !important;
+}
+
+
+
+.our-credentials{
+    position: relative;
+}
+
+.our-credentials::before {
+  content: "";
+  position: absolute;
+  top: 26.25rem;
+  right: 6.25rem;   
+  width: 18.75rem;
+  height: 100%;
+  background: url(../images/our-credentials-right-vector.svg) no-repeat right top;
+  background-size: contain;
+  z-index: -10;
+}
+
+@media (max-width: 1200px) {
+  .our-credentials::before {
+    content: none;
+  }
+}

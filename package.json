@@ -1,15 +1,28 @@
 {
-  "dependencies": {
-    "bootstrap": "^5.3.6"
-  },
   "name": "cyfer-blockchain",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {
+    "bootstrap": "^5.3.8"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass --quiet-deps scss:css",
+    "watch": "sass --watch --quiet-deps scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roshnihtce/Cyfer-Blockchain.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/Roshnihtce/Cyfer-Blockchain/issues"
+  },
+  "homepage": "https://github.com/Roshnihtce/Cyfer-Blockchain#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.95.0"
+  }
 }

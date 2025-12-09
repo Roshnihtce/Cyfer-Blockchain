@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyfer Blockchain</title>
   <meta name="author" content="Roshni Singh">
   <meta name="description"
     content="Cyfer Blockchain - This project must be designed to introduce and promote the world of Cryptocurrency to both new and experienced users. The page should be crafted with a modern, responsive layout and intuitive navigation, offering a seamless user experience while delivering essential information about digital currencies and the services offered.">
-  <title>Cyfer Blockchain</title>
+
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,19 +16,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=David+Libre:wght@400;500;700&family=Inder&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
   <!-- CSS Files -->
   <link rel="stylesheet" href="./css/style.min.css">
 
 </head>
 
 <body>
+
   <!-- Header section -->
-  <header class="position-fixed mt-lg-0 w-100 z-2">
-    <nav class="navbar navbar-expand-lg">
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-xl ">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./images/cyfer_logo.svg" aria-level="Go to home" alt="cyfer_logo" class="logo ps-2">
+        <a class="navbar-brand mt-5" href="index.html" aria-label="click here to go to Cyfer Home Page">
+          <img src="./images/cyfer_logo.svg" alt="cyfer_logo" class="logo ps-2 img-fluid">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,7 +37,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto gap-lg-3">
+          <ul class="navbar-nav ms-auto gap-xl-3">
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Product</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
@@ -45,7 +46,7 @@
             <li class="nav-item"><a class="nav-link" href="#">About</a></li>
           </ul>
 
-          <div class="ms-lg-4 mt-lg-0">
+          <div class="ms-xl-4 mt-xl-0 mt-3 text-center">
             <a href="#" class="custom-clip-button text-decoration-none">Contact Now</a>
           </div>
         </div>
@@ -56,48 +57,78 @@
   <main>
 
     <!-- Banner section -->
-    <section class="position-relative my-lg-3">
-      <div class="container position-relative fixed-bg">
-        <div class="row justify-content-evenly">
-          <div class="col-lg-4">
-            <h1 class="fs-3 mt-5 pt-lg-5">Unlocking the Future of Finance</h1>
-            <p class="fs-9 fw-normal mt-lg-5">In a digital age driven by innovation, cryptocurrency has emerged as a
-              revolutionary force that is
-              reshaping
-              the way we perceive and interact with money. At Cyfer Blockchain, we are your gateway to this exciting
-              world of
-              decentralized finance, empowering you to explore, invest, and transact with confidence.</p>
-            <div class="ms-lg-4 mt-5 d-flex">
-              <a href="#" class="custom-clip-button text-decoration-none me-2">Contact Now</a>
-              <a href="#" class="custom-clip-button-2 text-decoration-none btn-white-border border-2">Learn More</a>
+    <section class="banner position-relative pt-lg-2 pt-15 my-lg-3">
+      <div>
+        <img src="./images/purple-bg.png" alt="Purple"
+          class="img-fluid position-absolute end-0 d-xl-block d-none top-0 z-n10">
+      </div>
+      <div class="container position-relative hero-bg">
+        <div class="row justify-content-evenly flex-column-reverse flex-lg-row">
+
+          <!-- Text Column -->
+          <div class="col-lg-6 text-lg-start text-center pt-5">
+            <h1 class="fs-3 mt-5  ps-lg-5 ps-0 pt-lg-5">Unlocking the
+              <span class="d-block">Future of Finance</span>
+            </h1>
+
+            <p class="fs-9 fw-normal  ps-lg-5 ps-0 mt-lg-5">
+              In a digital age driven by innovation, cryptocurrency has emerged as
+              <span class="d-block">a revolutionary force that is reshaping the way we perceive and</span>
+              interact with money. At Cyfer Blockchain, we are your gateway
+              <span class="d-block">to this exciting world of decentralized finance, empowering you to</span>
+              explore, invest, and transact with confidence.
+            </p>
+
+
+            <div
+              class="mt-6 ps-lg-5 ps-0 d-flex hero-btn-wrapper justify-content-xl-start justify-content-center gap-sm-4 flex-wrap">
+
+
+              <a href="#" class="hero-btn d-grid justify-items-center align-items-center text-decoration-none pb-sm-4">
+                <img src="./images/button_frame.webp" alt="banner button contact" class="img-fluid"
+                  style="grid-area: 1/1;" loading="lazy">
+                <span style="grid-area: 1/1;" class="text-white text-center fw-semibold fs-8">Contact Now</span>
+              </a>
+
+              <a href="#" class="hero-btn d-grid justify-items-center align-items-center text-decoration-none pb-4">
+                <img src="./images/learn_button_frame.webp" alt="banner button learn" class="img-fluid btn-hover-style"
+                  style="grid-area: 1/1;" loading="lazy">
+                <span style="grid-area: 1/1;" class="text-white text-center fw-semibold z-2 fs-8">Learn more</span>
+              </a>
 
             </div>
 
           </div>
-          <div class="col-lg-5 mt-lg-5 pt-lg-5 top-50">
-            <img src="./images/banner_image.png" aria-level="banner" alt="Product Image" class="img-fluid" />
+
+          <!-- Image Column -->
+          <div class="col-lg-6 mt-lg-5 pt-lg-5 top-50">
+            <img src="./images/banner_image.webp" alt="Product Image" class="img-fluid " />
           </div>
+
         </div>
       </div>
     </section>
 
     <!-- Market section -->
-    <section class="market-section py-5">
+    <section class="stats-section py-5">
       <div class="container">
         <div class="row text-center">
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-lg-3">
             <h2 class="fs-3 fw-normal">$2000m+</h2>
             <p class="fs-8 fw-light">Market Capitalization</p>
           </div>
-          <div class="col-12 col-md-3 ">
+
+          <div class="col-12 col-lg-3">
             <h2 class="fs-3 fw-normal">40% - 50%</h2>
             <p class="fs-8 fw-light">Bitcoin Market Dominance</p>
           </div>
-          <div class="col-12 col-md-3">
+
+          <div class="col-12 col-lg-3">
             <h2 class="fs-3 fw-normal">100m+</h2>
             <p class="fs-8 fw-light">Users Worldwide</p>
           </div>
-          <div class="col-12 col-md-3">
+
+          <div class="col-12 col-lg-3">
             <h2 class="fs-3 fw-normal">10,000</h2>
             <p class="fs-8 fw-light">Different Cryptocurrencies</p>
           </div>
@@ -105,91 +136,513 @@
       </div>
     </section>
 
-    <!-- Discover Cryptocurrency section -->
-    <section class="py-5">
-      <div class="container discovery-crypto-section position-relative">
-        <div class="row justify-content-evenly align-items-center">
-          <div class="col-lg-5 text-center mb-lg-5">
-            <img src="./images/laptop.png" alt="laptop" class="img-fluid position-relative z-2">
+    <!--  Discover Cryptocurrency -->
+    <section class="crypto-section mb-md-10 mb-2 text-xl-start text-center position-relative overflow-x-clip">
+      <div>
+        <img src="./images/discover-polygon.png" alt="Discover-vector"
+          class=" img-fluid  position-absolute top-n40 d-xl-block d-none z-n5 end-0 ">
+        <img src="./images/cross.webp" alt="Cross"
+          class="img-fluid d-xl-block d-none  position-absolute z-n5 end-0   d-none d-xl-block">
+        <img src="./images/discover-right-vector.png" alt="Discover-vector"
+          class="img-fluid position-absolute top-6 start-0 d-none d-xxl-block z-n5  right-vector">
+      </div>
+      <div class="container">
+        <div class="row justify-content-between gap-5">
+
+          <div class="col-xl-5">
+            <img src="./images/laptop-phone.svg" class="img-fluid crypto-image mt-2 z-3 " alt="discover-laptop-image">
           </div>
 
-          <!-- Text Content Column -->
-          <div class="col-lg-5 d-flex flex-column justify-content-start position-relative">
-            <div>
-              <h2 class="mb-5">Discover Cryptocurrency</h2>
-              <img src="./images/cross.png" aria-level="divider" alt="Divider" class="position-absolute"
-                style="bottom: 0; right: 0; max-width: 140px;">
+          <div class="col-xl-6">
+            <h2 class="mt-2 mb-4">Discover <span class="d-block"> Cryptocurrency</span></h2>
+
+            <div class="pt-xl-5 me-xl-105 pb-6">
+
+              <p class="fw-normal fs-8">
+                Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a <span class="d-block"> sed quis ante
+                  vitae vitae. Vitae vel proin quis iaculis. Senectus morbi </span><span class="d-block"> sit volutpat
+                  id
+                  egestas augue tempor. Augue faucibus est at</span> curabitur adipiscing ornare
+                nunc sem libero.
+              </p>
+
+
+              <p class="fw-normal fs-8 m-0">
+                Diam vivamus neque a fusce facilisis id ipsum cursus fermentum. <span class="d-block"> Lectus mauris
+                  magna duis
+                  viverra velit vestibulum. Nunc sagittis</span> amet enim pretium elit suscipit. Sagittis facilisi
+                aliquet purus neque.
+              </p>
             </div>
 
-            <p class="fs-9 pt-5">
-              Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae. Vitae vel
-              proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor. Augue faucibus est at curabitur
-              adipiscing ornare nunc sem libero.
-            </p>
-            <p class="fs-9 pt-2">
-              Diam vivamus neque a fusce facilisis id ipsum cursus fermentum. Lectus mauris magna duis viverra velit
-              vestibulum. Nunc sagittis amet enim pretium elit suscipit. Sagittis facilisi aliquet purus neque.
-            </p>
           </div>
         </div>
       </div>
     </section>
+
+
     <!-- Our Range of Crypto Product -->
-    <section>
-      <div class="container text-center py-5">
-        <div class="mb-3">
-          <a href="#"><img src="./images/our_product.png" alt="our_product"></a>
+    <section class="crypto-products pt-100 text-lg-start text-center overflow-hidden">
+      <div class="container position-relative">
+
+        <div class="text-center">
+          <a href="#" class="gradient-button fs-8 mb-5 " aria-label="Our Product">Our Product</a>
         </div>
-        <h2 class="mb-5 heading-title">Our Range of <span class="text-gradient">Crypto Product</span></h2>
 
-        <div class="row justify-content-center gy-4">
-          <!-- Card 1: Sakura -->
-          <div class="col-md-5">
-            <div class="crypto-card d-flex">
-              <div class="card-icon">
-                <img src="./images/crypto_card_1.png" alt="Sakura">
-              </div>
-              <div class="card-content text-start">
-                <h5>Sakura</h5>
-                <p>Vitae Vel Froin</p>
-              </div>
+        <h2 class="mb-5 text-center fw-medium ">Our Range of Crypto Product</h2>
+
+        <div class="row row-gap-3 text-center">
+
+          <div class="col-xl-4 col-md-6 position-relative">
+            <img src="./images/sakura_frame.webp" class="img-fluid" alt="product-sakura-design">
+            <img src="./images/sakura.svg" alt="product-sakura-design" class="product-card-sakura">
+            <div class="product-info-sakura">
+              <h4>Sakura</h4>
+              <p>Vitae Vel Froin</p>
             </div>
           </div>
 
-          <!-- Card 2: Komorebi -->
-          <div class="col-md-5">
-            <div class="crypto-card d-flex">
-              <div class="card-icon">
-                <img src="./images/crypto_card_2.png" alt="Komorebi">
-              </div>
-              <div class="card-content text-start">
-                <h5>Komorebi</h5>
-                <p>Vitae Vel Froin</p>
-              </div>
+          <div class="col-xl-4 col-md-6 position-relative">
+            <img src="./images/komorebi_frame.webp" class="img-fluid" alt="product-komorebi-design">
+            <img src="./images/komorebi.svg" alt="product-komorebi-design" class="product-card-komorebi">
+            <div class="product-info-komorebi">
+              <h4>Komorebi</h4>
+              <p>Vitae Vel Froin</p>
             </div>
           </div>
 
-          <!-- Card 3: Yugen -->
-          <div class="col-md-5">
-            <div class="crypto-card d-flex">
-              <div class="card-icon">
-                <img src="./images/crypto_product_3.png" alt="Yugen">
-              </div>
-              <div class="card-content text-start">
-                <h5>Yugen</h5>
-                <p>Vitae Vel Froin</p>
-              </div>
+          <div class="col-xl-4 col-md-6 position-relative">
+            <img src="./images/sakura_frame.webp" class="img-fluid" alt="product-yugen-design">
+            <img src="./images/sakura.svg" alt="product-yugen-design" class="product-card-yugen">
+            <div class="product-info-yugen">
+              <h4>Yugen</h4>
+              <p>Vitae Vel Froin</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- Our Services Section -->
+    <section class="services-section text-white py-5 position-relative overflow-hidden mb-10">
+
+      <!-- Decorative Vectors -->
+      <img src="./images/our_credential_1.webp" class="service-left-vector" alt="left vector">
+      <img src="./images/half_ring.webp" class="service-right-vector" alt="right vector">
+
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="row  align-items-center text-lg-start text-center mb-5">
+          <div class="col-lg-6  g-4">
+            <a href="#" class="gradient-button fs-8 mb-2" aria-label="Our Services">Our Services</a>
+
+            <h2 class="section-title fs-3 mb-3">
+              Stay One Step Ahead
+              <span class="d-block">of Adversaries</span>
+            </h2>
+          </div>
+
+          <div class="col-lg-6">
+            <p class="section-description mb-3">
+              Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed
+              <span class="d-block">quis ante vitae vitae. Vitae vel proin quis iaculis.
+                Senectus morbi sit </span> volutpat id egestas augue tempor. Augue faucibus est at curabitur
+              <span class="d-block">adipiscing ornare nunc sem libero.</span>
+            </p>
+
+            <a href="#" class="custom-clip-button text-decoration-none" aria-label="Learn More">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+
+
+        <div class="row g-4">
+
+          <!-- Service Card 1 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-service-card">
+              <img src="./images/cards1.webp" alt="Crypto Exchange" class="img-fluid">
+
+              <div class="card-text">
+                <h5 class="fw-medium heading-gradient">Crypto Exchange</h5>
+                <p class="fw-light">
+                  Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae.
+                  Vitae vel proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-service-card">
+              <img src="./images/card2.webp" alt="Wallet Services" class="img-fluid">
+
+              <div class="card-text">
+                <h5 class="fw-medium heading-gradient">Wallet Services</h5>
+                <p class="fw-light">
+                  Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae.
+                  Vitae vel proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-service-card">
+              <img src="./images/card2.webp" alt="Resources" class="img-fluid">
+
+              <div class="card-text">
+                <h5 class="fw-medium heading-gradient">Resources</h5>
+                <p class="fw-light">
+                  Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae.
+                  Vitae vel proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-service-card">
+              <img src="./images/card3.webp" alt="Market Insights" class="img-fluid">
+
+              <div class="card-text">
+                <h5 class="fw-medium heading-gradient">Market Insights</h5>
+                <p class="fw-light">
+                  Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae.
+                  Vitae vel proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-service-card">
+              <img src="./images/card3.webp" alt="Security First" class="img-fluid">
+
+              <div class="card-text">
+                <h5 class="fw-medium heading-gradient">Security First</h5>
+                <p class="fw-light">
+                  Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae.
+                  Vitae vel proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-service-card">
+              <img src="./images/card4.webp" alt="User-Centric" class="img-fluid">
+
+              <div class="card-text">
+                <h5 class="fw-medium heading-gradient">User-Centric</h5>
+                <p class="fw-light">
+                  Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae.
+                  Vitae vel proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 7 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-service-card">
+              <img src="./images/card4.webp" alt="Variety" class="img-fluid">
+
+              <div class="card-text">
+                <h5 class="fw-medium heading-gradient">Variety</h5>
+                <p class="fw-light">
+                  Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae.
+                  Vitae vel proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service Card 8 -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="our-service-card">
+              <img src="./images/cards1.webp" alt="Transparent Fees" class="img-fluid">
+
+              <div class="card-text">
+                <h5 class="fw-medium heading-gradient">Transparent Fees</h5>
+                <p class="fw-light">
+                  Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae.
+                  Vitae vel proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="testimonials position-relative mt-xl-80 mb-xl-200 my-40 overflow-x-clip mb-15 ">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="text-center text-xl-start mb-4 mb-md-0">
+              <a href="#" class="gradient-button border-btn fs-8 section-gradient mb-3">Testimonials </a>
+              <h2 class="fw-medium mb-4">What Our Clients Have to Say</h2>
+              <p class="fw-semibold mb-5 fs-8 section-gradient">
+                While you may think you are safe online, these real-life stories prove otherwise
+              </p>
+            </div>
+
+
+            <div class="d-flex flex-column  row-gap-4">
+
+              <!-- CARD 1 -->
+              <div class="t-card d-flex gap-xl-6 gap-md-0 gap-3 mt-xl-120 mt-60 flex-wrap justify-content-end">
+                <div class="d-flex justify-content-end position-relative">
+
+                  <img src="./images/testimonial_frame.svg" class="testimonials-box " alt="testimonials-box">
+
+                  <div class="t-img">
+                    <img src="./images/testimonial_person1.webp" alt="t-user" class="img-fluid t-user">
+                  </div>
+
+                  <div class="t-info">
+                    <h7 class="gradient-heading fw-medium fs-7">Wade Warren</h7>
+                    <p class="mb-sm-1 m-0">Co-founder of Superlink</p>
+                    <div class="t-social d-flex  gap-1">
+                      <a href="#" aria-label="facebook"><img src="./images/facebook_icon.svg" class="social-icon" alt="Facebook-icon"></a>
+                      <a href="#" aria-label="twitter"><img src="./images/twitter_icon.svg " class="social-icon" alt="Twitter-icon"></a>
+                      <a href="#" aria-label="instagram"><img src="./images/instagra_icon.svg" class="social-icon" alt="Instagram-icon"></a>
+                    </div>
+                  </div>
+
+                  <div class="t-text">
+                    <p>Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi
+                      imperdiet. Et nisl ac eu tempus hendrerit. Non donec ut aenean placerat pulvinar quis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 2 (repeat same structure) -->
+              <div class="t-card d-flex gap-xl-8 gap-md-0 gap-4 mt-xl-120 mt-60 flex-wrap justify-content-end">
+                <div class="d-flex justify-content-end position-relative">
+                  <img src="./images/testimonial_frame.svg" class="testimonials-box">
+
+                  <div class="t-img">
+                    <img src="./images/testimonial_person2.webp" class="img-fluid t-user">
+                  </div>
+
+                  <div class="t-info">
+                    <h7 class="gradient-heading fw-medium fs-7 ">Wade Warren</h7>
+                    <p class="m-0">Co-founder of Superlink</p>
+
+                    <div class="t-social d-flex  gap-1">
+                      <a href="#" aria-label="facebook"><img src="./images/facebook_icon.svg" class="social-icon" alt="Facebook-icon"></a>
+                      <a href="#" aria-label="twitter"><img src="./images/twitter_icon.svg " class="social-icon" alt="Twitter-icon"></a>
+                      <a href="#" aria-label="instagram"><img src="./images/instagra_icon.svg" class="social-icon" alt="Instagram-icon"></a>
+                    </div>
+                  </div>
+
+                  <div class="t-text">
+                    <p>Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi
+                      imperdiet. Et nisl ac eu tempus hendrerit. Non donec ut aenean placerat pulvinar quis.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CARD 3 -->
+              <div class="t-card card-3 d-flex gap-xl-8 gap-md-0 gap-4 mt-xl-120 mt-60 flex-wrap justify-content-end">
+                <div class="d-flex justify-content-end position-relative">
+                  <img src="./images/testimonial_frame.svg" class="testimonials-box">
+
+                  <div class="t-img">
+                    <img src="./images/testimonial_person3.webp" class="img-fluid t-user">
+                  </div>
+
+                  <div class="t-info">
+                    <h7 class="gradient-heading fw-medium fs-7">Wade Warren</h7>
+                    <p class="m-0">Co-founder of Superlink</p>
+
+                    <div class="t-social d-flex  gap-1">
+                      <a href="#" aria-label="facebook"><img src="./images/facebook_icon.svg" class="social-icon" alt="Facebook-icon"></a>
+                      <a href="#" aria-label="twitter"><img src="./images/twitter_icon.svg " class="social-icon" alt="Twitter-icon"></a>
+                      <a href="#" aria-label="instagram"><img src="./images/instagra_icon.svg" class="social-icon" alt="Instagram-icon"></a>
+                    </div>
+                  </div>
+
+                  <div class="t-text">
+                    <p>Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi
+                      imperdiet. Et nisl ac eu tempus hendrerit. Non donec ut aenean placerat pulvinar quis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Our Credentials -->
+    <section class="our-credentials py-50 mb-10">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-between  row-gap-10">
+          <div class="col-xl-6 col-md-10 order-xl-0 order-3 d-flex">
+            <div class="position-relative">
+              <ul class="nav nav-tabs mb-3 tabs-inside position-absolute top-0 start-10" id="credentialsTab"
+                role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="Digital-tab" data-bs-toggle="tab" data-bs-target="#Digital-pane"
+                    type="button" role="tab" aria-controls="Digital-pane" aria-selected="true">
+                    Our Digital Partners
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="Blockchain-tab" data-bs-toggle="tab" data-bs-target="#Blockchain-pane"
+                    type="button" role="tab" aria-controls="Blockchain-pane" aria-selected="false">
+                    Blockchain Standards
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="credentialsTabContent">
+                <div class="tab-pane fade show active" id="Digital-pane" role="tabpanel" aria-labelledby="Digital-tab">
+                  <div class="logo-frame position-relative d-grid grid-1-1">
+                    <img src="./images/our-credentials.png" class="img-fluid frame-bg grid-1-1" alt="background">
+                    <div class="logo-wrapper d-grid grid-1-1">
+                      <img src="./images/Our-Credentials-2.svg" class="img-fluid" alt="Our-Credentials-1">
+                      <img src="./images/Our-Credentials-3.svg" class="img-fluid" alt="Our-Credentials-2">
+                      <img src="./images/Our-Credentials-5.svg" class="img-fluid" alt="Our-Credentials-3">
+                      <img src="./images/Our-Credentials-4.svg" class="img-fluid" alt="Our-Credentials-4">
+                      <img src="./images/Our-Credentials-6.svg" class="img-fluid" alt="Our-Credentials-5">
+                      <img src="./images/Our-Credentials-1.svg" class="img-fluid" alt="Our-Credentials-6">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="Blockchain-pane" role="tabpanel" aria-labelledby="Blockchain-tab">
+                  <div class="logo-frame position-relative d-grid grid-1-1">
+                    <img src="./images/our-credentials.png" class="img-fluid frame-bg grid-1-1 flip-y" alt="background">
+                    <div class="logo-wrapper d-grid grid-1-1">
+                      <img src="./images/Our-Credentials-2.svg" class="img-fluid" alt="Our-Credentials-1">
+                      <img src="./images/Our-Credentials-3.svg" class="img-fluid" alt="Our-Credentials-2">
+                      <img src="./images/Our-Credentials-5.svg" class="img-fluid" alt="Our-Credentials-3">
+                      <img src="./images/Our-Credentials-4.svg" class="img-fluid" alt="Our-Credentials-4">
+                      <img src="./images/Our-Credentials-6.svg" class="img-fluid" alt="Our-Credentials-5">
+                      <img src="./images/Our-Credentials-1.svg" class="img-fluid" alt="Our-Credentials-6">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-5 py-md-50 py-xl-0 text-center text-xl-start mb-4 mb-md-0">
+            <a href="#" class="border-btn gradient-button fw-semibold fs-8 mb-6 section-gradient">Our Credentials</a>
+            <h2 class="heading-gradient mb-6">Expertise You Can Rely On</h2>
+            <p class="text-white ">
+              Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae
+              vitae.
+              Vitae vel proin quis iaculis. Senectus morbi sit volutpat id egestas augue tempor.
+              Augue faucibus est at curabitur adipiscing ornare nunc sem libero.
+              Diam vivamus neque a fusce facilisis id ipsum cursus fermentum.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Our Resources -->
+    <section class="resource-section pb-xl-80 pb-6 mt-xl-100  pt-100 position-relative">
+      <div class="container">
+
+        <div class="text-center text-xl-start mb-4 ">
+          <a href="#" aria-label="Our resources" class="border-btn gradient-button fs-8 mb-2">Our Resources</a>
+          <h2 class="fw-medium mb-7">Latest News & Blog</h2>
+        </div>
+
+        <!-- FEATURED BLOG -->
+        <div class="row d-flex align-items-end mt-100">
+          <div class="col-xl-7">
+            <div class="resource-feature-post py-10 px-5">
+              <div class="resource-feature-content">
+                <p class="fs-8 mb-xxl-3 mb-1 small">Security | 10 min read</p>
+                <h3 class="fw-medium  mb-xxl-5 mb-2">Lorem ipsum dolor sit amet consectetur. Pretium amet facilisis.
+                </h3>
+                <p class="fs-8 mb-80 small ">
+                  Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi
+                  imperdiet. Et nisl ac eu tempus hendrerit. Non donec ut aenean placerat pulvinar quis.
+                </p>
+                <p class="fs-8 small m-0">August 4, 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-5 resource-side-img">
+            <img src="./images/our_resources.webp" class="resources-image d-xl-block d-none img-fluid"
+              alt="resources-image ">
+          </div>
+        </div>
+
+        <!-- BLOG CARDS -->
+        <div class="row blog-card mt-3 row-gap-4">
+
+          <div class="col-xl-4 col-md-6">
+            <div class="resource-card bg-glossy">
+              <div class="resource-card-bg"></div>
+              <img src="./images/blogs-card1.svg" alt="Blog" class="w-100">
+              <div class="card-body ps-3">
+                <p class="fs-8 mb-4 mt-6">Security | 10 min read</p>
+                <h3 class="fw-medium fs-3 mb-50 ">Lorem ipsum dolor sit amet consectetur. Pretium amet facilisis.</h3>
+                <p class="fs-8">August 4, 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="resource-card bg-glossy">
+              <div class="resource-card-bg"></div>
+              <img src="./images/blogs-card2.svg" alt="Blog" class="w-100">
+              <div class="card-body ps-3 ">
+                <p class="fs-8 mb-4 mt-6">Security | 10 min read</p>
+                <h3 class="fw-medium fs-3 mb-50">Lorem ipsum dolor sit amet consectetur. Pretium amet facilisis.</h3>
+                <p class="fs-8">August 4, 2023</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-md-6">
+            <div class="resource-card bg-glossy">
+              <div class="resource-card-bg"></div>
+              <img src="./images/blogs-card3.svg" alt="Blog" class="w-100">
+              <div class="card-body ps-3">
+                <p class="fs-8 mb-4 mt-6">Security | 10 min read</p>
+                <h3 class="fw-medium fs-3 mb-50">Lorem ipsum dolor sit amet consectetur. Pretium amet facilisis.</h3>
+                <p class="fs-8">August 4, 2023</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
     <!-- Embark on a Digital Journey -->
-    <section class="py-5">
-      <div class="container ">
-        <div class="row embark-section">
+    <section class="embark py-xl-10">
+      <div class="container embark-section">
+        <div class="row  ">
           <div class="col-lg-6 mb-4 pe-2">
             <h2 class="gradient-heading ps-3 mt-2">Embark on a Digital Journey</h2>
             <p class="fs-9 ps-3 mt-2">
@@ -197,12 +650,12 @@
               Et nisl ac eu tempus.
             </p>
 
-            <img src="./images/abstract_shape.png" alt="Abstract Shape" class="image-large ps-3 pb-4" class="img-fluid">
+            <img src="./images/embark.webp" alt="Abstract Shape" class="image-large  ps-3 pb-4 img-fluid">
           </div>
 
           <!-- Right Contact Form -->
-          <div class="col-lg-6 ps-5">
-            <form class="contact-form p-4 rounded">
+          <div class="col-lg-6 ps-lg-5 mb-xl-5">
+            <form class="contact-form p-lg-4 rounded">
               <div class="mb-3">
                 <label class="form-label text-white">Full Name</label>
                 <input type="text" class="form-control bg-white d-block form-control-custom">
@@ -249,34 +702,36 @@
 
   </main>
   <!-- <footer > -->
-  <footer>
-    <section class="footer-section pt-5 pb-4">
+  <footer class="position-relative">
+    <section class="footer-section pt-xl-5 pb-xl-4 m-0">
       <div class="container fixed-bg1">
-        <div class="row gy-5 justify-content-between align-items-center">
+        <div class="row gy-5 justify-content-between align-items-start">
 
           <!-- Company Info -->
-          <div class="col-12 col-md-4 ms-lg-5 gap-5">
-            <img src="./images/cyfer_logo.svg" alt="logo" class="logo mt-2">
+          <div class="col-12 col-md-4 ms-lg-5 gap-lg-3">
+            <img src="./images/cyfer_logo.svg" alt="logo" class="logo mb-2">
             <p class="small mt-lg-4">
-              Lorem ipsum dolor sit amet consectetur. Erat donec eleifend vulputate mattis nunc justo morbi imperdiet.
-              Et nisl ac eu tempus hendrerit. Non donec ut aenean placerat pulvinar quis.
+              Lorem ipsum dolor sit amet consectetur. Erat donec eleifend <span class="d-block">vulputate mattis nunc
+                justo morbi imperdiet.
+                Et nisl ac eu </span> tempus hendrerit. Non donec ut aenean placerat pulvinar quis.
             </p>
-            <div class="social-icons d-flex gap-lg-3 mt-lg-5">
+
+            <div class="social-icons d-flex gap-3 mt-lg-5">
               <a href="https://www.facebook.com" target="_blank" class="social-link" aria-label="Facebook">
-                <img src="./images/facebook_icon.png" alt="Facebook" height="24">
+                <img src="./images/f_facebook.svg" alt="Facebook" height="24">
               </a>
               <a href="https://www.twitter.com" target="_blank" class="social-link" aria-label="Twitter">
-                <img src="./images/twitter_icon.png" alt="Twitter" height="24">
+                <img src="./images/f_twitter.svg" alt="Twitter" height="24">
               </a>
               <a href="https://www.instagram.com" target="_blank" class="social-link" aria-label="Instagram">
-                <img src="./images/instgram_icon.png" alt="Instagram" height="24">
+                <img src="./images/f_instagram.svg" alt="Instagram" height="24">
               </a>
             </div>
           </div>
 
           <!-- Navigation Links -->
           <div class="col-6 col-md-2">
-            <h6>Navigation</h6>
+            <h6 class="footer-header">Navigation</h6>
             <ul class="list-unstyled">
               <li><a href="#" class="footer-link">About Us</a></li>
               <li><a href="#" class="footer-link">What we do</a></li>
@@ -289,7 +744,7 @@
 
           <!-- Resource Links -->
           <div class="col-6 col-md-2">
-            <h6 class="mb-3">Resources</h6>
+            <h6 class="footer-header">Resources</h6>
             <ul class="list-unstyled">
               <li><a href="#" class="footer-link">About Us</a></li>
               <li><a href="#" class="footer-link">What we do</a></li>
@@ -302,7 +757,7 @@
 
           <!-- Contact Info -->
           <div class="col-12 col-md-2">
-            <h6 class="mb-3">Contact Info</h6>
+            <h6 class="footer-header">Contact Info</h6>
             <p>828 Timbercrest Road, Healy City, AK 99743</p>
             <p>Telephone : + (012) 345 6789</p>
             <p>Fax : + (012) 345 6789</p>
@@ -312,14 +767,20 @@
         </div>
 
         <!-- Footer Bottom -->
-        <div class="row my-4">
-          <div class="col">
-            <p class="mb-0 small">Copyright &copy; 2023 Dotcreativemarket., Ltd. All right reserved</p>
+        <section class="row">
+          <div class="col text-end">
+            <small class="mt-2 d-block">
+              Copyright &copy; 2023 Dotcreativemarket., Ltd. All rights reserved
+            </small>
           </div>
-        </div>
+        </section>
+
       </div>
     </section>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

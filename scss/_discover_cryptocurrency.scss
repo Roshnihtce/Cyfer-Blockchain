@@ -1,66 +1,75 @@
-.discovery-crypto-section {
-  background-image: url('../images/mask_group_discovery.png');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 0;
-  margin-top: 5rem;
-  min-height: 100vh;
-  width: 100%;
-  color: #fff;
+.crypto-section {
   position: relative;
   overflow: hidden;
 
-  &::before {
+  &::after {
     content: '';
     position: absolute;
-   
-    width: 100%;
-    height: 100%;
+    top: 100%;
+    left: 0;
+    transform: translate(-80%, -50%);
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #B95DFE;
+    filter: blur(100px);
+    opacity: 0.25;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .container {
+    position: relative;
     z-index: 1;
+    background-image: url('../images/crypto-frame.svg');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+}
+
+
+.crypto-image {
+  width: 38.6875rem;
+}
+
+
+@media (max-width: 1200px) {
+  .crypto-section .container {
+    background-image: none !important;
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .crypto-section h2 {
+    font-size: 3.4375rem !important;
   }
 
-  .container,
-  .row,
-  .col-lg-5 {
-    position: relative;
-    z-index: 2;
+  .crypto-section .fs-8 {
+    font-size: 1.125rem !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .crypto-section h2 {
+    font-size: 2.8125rem !important;
   }
 
-  .text-content {
-    position: relative;
+  .crypto-section .fs-8 {
+    font-size: 1rem !important;
+  }
+}
 
-    .divider-img {
-      position: absolute;
-      top: 10px;
-      right: 0;
-      width: 80px; // adjust as needed
-      height: auto;
-      z-index: 2;
-    }
+@media (max-width: 576px) {
+  .crypto-section h2 {
+    font-size: 2.1875rem !important;
   }
 
-  @media (max-width: 767.98px) {
-    .text-content {
-      text-align: center;
-
-      .divider-img {
-        position: static;
-        display: block;
-        margin: 0 auto 1rem;
-      }
-    }
-
-    h2 {
-      font-size: 24px;
-    }
-
-    p {
-      font-size: 14px;
-    }
-
-    img {
-      max-width: 100%;
-    }
+  .crypto-section .fs-8 {
+    font-size: 0.6875rem !important;
   }
+
+
 }

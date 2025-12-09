@@ -1,39 +1,115 @@
- .fixed-bg {
-     background-image: url('../images/Vector_banner.png');
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     min-height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding-block-end: 0;
+.hero-bg {
+  background-image: url('../images/banner_frame.webp');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block-end: 0;
+}
+.hero-btn {
+  max-width: 180px;
+  text-align: center;
+  gap: 0.25rem;
+  place-items: center;
+  position: relative;
+  font-size: $h8-font-size !important;
 
-     // Optional overlay (if background too bright)
-//      &::before {
-//          content: '';
-//          position: absolute;
-//          inset: 0;
-//          z-index: 1;
-//      }
-
-//      @media (min-width: 992px) {
-//          flex-direction: row;
-//          align-items: center;
-//          justify-content: space-between;
-//      }
-
-//      .content {
-//          max-width: 500px;
-
-//          figure {
-//              margin: 0;
-//              max-width: 500px;
-
-//              img {
-//                  width: 100%;
-//                  height: auto;
-//              }
-//          }
-//      }
-
+  span {
+    font-size: $h8-font-size !important;
+    line-height: 1.2;
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.btn-hover-style:hover {
+  background-color: #6F26FF;
+  clip-path: polygon(
+    0% 0%,
+    calc(100% - 20px) 0%,
+    100% 20px,
+    100% 100%,
+    20px 100%,
+    0% calc(100% - 20px)
+  );
+  z-index: 0;
+}
+
+
+@media (max-width: 992px) {
+  .hero-bg {
+    background-image: none !important;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .banner .fs-9{
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+    .row>div {
+         margin-bottom: -1.5625rem;
+    }
+
+
+}
+
+
+@media (max-width: 576px) {
+  .hero-btn-wrapper {
+    flex-direction: column !important;
+    gap: 0.9375rem !important;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-btn {
+    width: 80%; 
+  }
+
+  .banner .fs-9{
+    font-size: 0.6875 !important;
+  }
+
+
+}
+
+
+
+@media (max-width: 991px) {
+    .banner .row>div {
+        margin-bottom: -3.9375 !important;
+    }
+}
+
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  // right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/hero-banner-left.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -10;
+}
+
+@media (max-width: 992px) {
+  .banner::after {
+    content: none;
+  }
+}
+
+
+

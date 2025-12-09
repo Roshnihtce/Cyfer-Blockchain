@@ -1,14 +1,33 @@
 .embark-section {
-  background-image: url('../images/embark_bg.png');
+  background-image: url('../images/embark_frame.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 700px; 
+ 
 }
+
 
 
 .image-large {
   width: auto;
-  height: 500px;
+  height: 31.25rem;
   padding-top: 2rem;
   }
+
+@media (max-width: 992px) {
+  .embark-section {
+    background-image: none !important;  
+  }
+
+  
+
+  .embark-section > div {
+    margin-bottom: 1.875rem;
+  }
+
+  .contact-form {
+    margin-bottom: 5rem !important;
+  }
+}
+
+

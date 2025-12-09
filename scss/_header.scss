@@ -1,5 +1,4 @@
-
-
+// Navbar links
 .navbar .nav-link {
   transition: color 0.3s ease;
   color: white;
@@ -13,9 +12,9 @@
 .custom-clip-button {
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
-  padding: 12px 32px;
+  padding: 0.75rem 2rem;
   background: linear-gradient(90deg, #b46cff, #6a11cb);
   border: none;
   cursor: pointer;
@@ -30,23 +29,31 @@
 .custom-clip-button-2 {
   font-family: 'Archivo', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   color: white;
-  padding: 12px 32px;
-  border: 2px solid #fff; 
+  padding: 0.75rem 2rem;
+  border: 2px solid #fff;
   cursor: pointer;
   clip-path: polygon(100% 50%, 100% 100%, 10.36% 100%, 0% 50%, 0% 0%, 88.84% 0%);
   transition: transform 0.3s ease-in-out;
+
   &:hover {
     transform: scale(1.05);
   }
 }
 
-//}
+
 
 .logo {
-  width: 250px;
+  width: 15.625rem;
   height: auto;
 
 }
 
+
+@media (max-width: 1200px) {
+  .logo {
+    width: 12.5rem;
+    height: auto;
+  }
+}

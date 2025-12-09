@@ -1,3 +1,4 @@
+
 // ------- Custom Variables ------- //
 
 // Colors
@@ -15,6 +16,19 @@ $custom-colors: (
   "voilet": $voilet,
 );
 
+@font-face {
+  font-family: "Clash Display Variable";
+  src: url("../fonts/ClashDisplay-Variable.ttf") format("truetype");
+  font-weight: 100 900; 
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+// Font families
+$font-family-base: "Archivo", sans-serif;
+$headings-font-family:  "Clash Display Variable", sans-serif;
 // Grid breakpoints
 $custom-grid-breakpoints: (
   xxxl: 1700px
@@ -25,16 +39,12 @@ $custom-container-max-widths: (
   xxxl: 1460px
 );
 
-// Font families
-$heading-font-family: 'Clash Display Variable', sans-serif;
-$font-family-base: 'Archivo', sans-serif;
-
 // Font colors
-$body-bg:$black;
-$body-color:#fff;
+$body-bg: $black;
+$body-color: #fff;
 
-
-$heading-gradient: linear-gradient(-63deg, #FFFF 0%, #DAC8FF 100%);
+// Gradient for headings
+$heading-gradient: linear-gradient(-63deg, #FFFF 0%, #cebaf8 100%);
 h1, h2, h3, h4, h5, h6 {
   background: $heading-gradient;
   -webkit-background-clip: text;
@@ -44,11 +54,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-// Font size base
+
+// Font size base (only once)
 $font-size-base: 1rem;
 
-// Font sizes ( 68 60 40 32 30 28 24 20 16 14 )//
-$h1-font-size: $font-size-base * 4.25;
+// Responsive heading sizes
+$h1-font-size: min(68px, calc($font-size-base + 4.5vw));
 $h2-font-size: $font-size-base * 3.75;
 $h3-font-size: $font-size-base * 2.5;
 $h4-font-size: $font-size-base * 2;
@@ -56,8 +67,13 @@ $h5-font-size: $font-size-base * 1.875;
 $h6-font-size: $font-size-base * 1.75;
 $h7-font-size: $font-size-base * 1.5;
 $h8-font-size: $font-size-base * 1.25;
-$h9-font-size: $font-size-base;
-$h10-font-size: $font-size-base * 0.875;
+$h9-font-size: $font-size-base * 0.875;
+$h10-font-size: $font-size-base * 0.75; 
+
+// ------- Bootstrap Import Order ------- //
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 $custom-font-size: (
   7: $h7-font-size,
@@ -66,21 +82,29 @@ $custom-font-size: (
   10: $h10-font-size,
 );
 
+
+
 // Spacers
 $spacer: 1rem;
-$spacers: (
-  0: 0,
-  1: $spacer * .5,
-  2: $spacer,
-  3: $spacer * 1.25,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 4.5,
-  7: $spacer * 5,
-  
 
+$spacers: (
+  0: 0,                 
+  1: $spacer * 0.625,   // 10px
+  2: $spacer * 1.25,    // 20px
+  3: $spacer * 1.875,   // 30px
+  4: $spacer * 2.5,     // 40px
+  5: $spacer * 3.125,   // 50px
+  6: $spacer * 3.75,    // 60px
+  7: $spacer * 4.375,   // 70px
+  8: $spacer * 5,       // 80px
+  9: $spacer * 5.625,   // 90px
+  10: $spacer * 6.25,    // 100px
+  15: $spacer * 9.375  // 150px
+  
 );
 
+
+// Position values
 $position-values: (
   0: 0,
   5: 5%,
@@ -92,43 +116,53 @@ $position-values: (
   200: 200px,
 );
 
-
 // Navigation
 $nav-link-color: #fff;
 
 
 
+
 @import './fonts';
 
-// ------- Bootstrap Import Order ------- //
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import '../node_modules/bootstrap/scss/mixins';
-
-//  Map overrides
+// Map overrides
 $container-max-widths: map-merge($container-max-widths, $custom-container-max-widths);
-$grid-breakpoints: map-merge($map1: $grid-breakpoints, $map2:$custom-grid-breakpoints );
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 $theme-colors: map-merge($theme-colors, $custom-colors);
 $font-sizes: map-merge($font-sizes, $custom-font-size);
 
-// Our Custom Partials
+// Bootstrap Main 
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+.grid-area-1-1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+.text-gradient-1 {
+  background: linear-gradient(90.32deg, #AC82FF -8.31%, #FFFFFF 148%) !important;
+}
+
+
+
+.z-n10{
+  z-index: -10;
+}
+
+.z-n5{
+  z-index: -5;
+}
+
+// Our Custom Partials
 @import './header.scss';
 @import './banner_section';
 @import './market_section.scss';
 @import './discover_cryptocurrency';
 @import './crypto_product';
+@import'./our_service';
 @import './form';
 @import './footer';
-
-
-
-
-
-// Bootstrap Main 
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-
-
+@import './testimonials';
+@import './our_cradential';
+@import './our_resources';
 
 
 
